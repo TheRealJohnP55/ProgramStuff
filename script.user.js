@@ -1,13 +1,12 @@
 // ==UserScript==
 // @name         CraftBots Userscript
-// @namespace    Beta
+// @namespace    example.com
 // @version      2.4
 // @description  CellCraft Bots Are Back!
 // @author       Camden
 // @match       *.cellcraft.io/*
 // @require      https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js
 // @grant        none
-// @run-at       document-start
 // ==/UserScript==
 setTimeout(function() {
     window.sUkt327Dkhi = window.WebSocket;
