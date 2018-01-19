@@ -1,3 +1,14 @@
+// ==UserScript==
+// @name         CraftBots Userscript
+// @namespace    Beta
+// @version      2.4
+// @description  CellCraft Bots Are Back!
+// @author       Camden
+// @match       *.cellcraft.io/*
+// @require      https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js
+// @grant        none
+// @run-at       document-start
+// ==/UserScript==
 setTimeout(function() {
     window.sUkt327Dkhi = window.WebSocket;
     window.aRm3gK2Ogm = function(){return {readyState: 0}};
@@ -119,7 +130,7 @@ setTimeout(function() {
         transmit_game_server()
     });
    
-    $( "#overlays" ).after( "<div style='z-index: 10000000; border-radius: 4px;position: fixed; top: 300px; right: 10px; text-align: center; width: 200px; background-color: #000; opacity: 0.9; padding: 7px;'> <div style='border-radius: 25px; text-indent:0; border:3px solid #fff; display:inline-block; color:#000; font-family:arial; font-size:15px; font-weight:bold; font-style:normal; height:30px; -webkit-box-shadow: 0px 0px 52px -6px rgba(46,204,113,1); -moz-box-shadow: 0px 0px 52px -6px rgba(46,204,113,1); box-shadow: 0px 0px 52px -6px rgb(202, 202, 202); line-height:1.5em; text-decoration:none; text-align:center; width: 190px; color: #fff;'>CraftBots.tk</div><br><br> <a style='color: #fff; font-family: arial;'>Bots: </a><a style='color: #fff; font-family: arial;' id='minionCount'></a><br> <a style='color: #fff; font-family: arial;'>X/Y: </a><a style='color: #fff; font-family: arial;'id='gh45nmvsy'>0,0</a><br><br><a style='color: #fff; font-family: arial;'>X - Split Bots</a><br><a style='color: #fff; font-family: arial;'>R - Bots Feed </a> </div>" );
+    $( "#overlays" ).after( "<div style='z-index: 10000000; border-radius: 4px;position: fixed; top: 300px; right: 10px; text-align: center; width: 200px; background-color: #000; opacity: 0.9; padding: 7px;'> <div style='border-radius: 25px; text-indent:0; border:3px solid #fff; display:inline-block; color:#000; font-family:arial; font-size:15px; font-weight:bold; font-style:normal; height:30px; -webkit-box-shadow: 0px 0px 52px -6px rgba(46,204,113,1); -moz-box-shadow: 0px 0px 52px -6px rgba(46,204,113,1); box-shadow: 0px 0px 52px -6px rgb(202, 202, 202); line-height:1.5em; text-decoration:none; text-align:center; width: 190px; color: #fff;'>CraftBots.tk</div><br><br> <a style='color: #fff; font-family: arial;'>THIS IS AWESOME STUFF</a><br><br><a style='color: #fff; font-family: arial;'>Bots: </a><a style='color: #fff; font-family: arial;' id='minionCount'></a><br> <a style='color: #fff; font-family: arial;'>X/Y: </a><a style='color: #fff; font-family: arial;'id='gh45nmvsy'>0,0</a><br><br><a style='color: #fff; font-family: arial;'>X - Split Bots</a><br><a style='color: #fff; font-family: arial;'>R - Bots Feed </a> </div>" );
    socket.on('spawn-count', function(data) {
         document.getElementById('minionCount').innerHTML = '<div style="display: inline;"><span id="botlayer-bots" class="label label-info pull-right">' + data + '</span></a></div>';
     });
@@ -218,6 +229,7 @@ $("body").trigger($.Event("keyup", { keyCode: 87}));
                 window.aYbm28lPgj43.p--;
                 document.getElementById('ismoveToMouse').innerHTML = window.aYbm28lPgj43.p;
                 break;
+
             case 67:
                 window.aYbm28lPgj43.q=!window.aYbm28lPgj43.q;
                 if(window.aYbm28lPgj43.q) { document.getElementById('dfdghehfj').innerHTML = "On"; } else { document.getElementById('dfdghehfj').innerHTML = "Off"; }
@@ -231,7 +243,7 @@ $("body").trigger($.Event("keyup", { keyCode: 87}));
                 socket.emit("cmd", {
             "name": "eject"
         })
-                break;
+                break; 
             case 80:
                 window.aYbm28lPgj43.p++;
                 document.getElementById('ismoveToMouse').innerHTML = window.aYbm28lPgj43.p;
