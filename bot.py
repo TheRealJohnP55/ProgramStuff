@@ -13,7 +13,7 @@ def parse(cmd):
     typ = "username"
     if cmd in ["pflikebot","pfdislikebot"]:
       typ = "profile"
-      cmd = cmd[3:]
+      cmd = cmd[2:]
     urlopen("http://sheltered-castle-48436.herokuapp.com/{}/{}/{}".format(cmd,typ,uname))
     print("Success")
 def main():
