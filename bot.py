@@ -5,7 +5,7 @@ def parse(cmd):
     print("Invalid command. Type help for a list of commands")
   elif cmd == "help":
     print("likebot - likebots a comment\ndislikebot - dislikebots a comment\npflikebot - likebots a profile post\npfdislikebot - dislikebots a profile post")
-  elif cmd == "exit:
+  elif cmd == "exit":
     exit()
   else:
     print("Enter username")
