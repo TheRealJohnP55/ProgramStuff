@@ -10,7 +10,11 @@ def parse(cmd):
   else:
     print("Enter username")
     uname = input(">>>")
-    urlopen("http://sheltered-castle-48436.herokuapp.com/{}/username/{}".format(cmd,uname))
+    typ = "username"
+    if cmd in ["pflikebot","pfdislikebot"]:
+      typ = "profile"
+      cmd = cmd[3:]
+    urlopen("http://sheltered-castle-48436.herokuapp.com/{}/{}/{}".format(cmd,typ,uname))
     print("Success")
 def main():
   result = input(">>>")
