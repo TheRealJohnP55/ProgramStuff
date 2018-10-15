@@ -13,9 +13,9 @@ def parse(cmd):
     urlopen("http://sheltered-castle-48436.herokuapp.com/{}/username/{}".format(cmd,uname))
     print("Success")
 def main():
-  print("Camden's 2.11 Likebot")
-  print("Type help for a list of commands")
   result = input(">>>")
   parse(result)
+print("Camden's 2.11 Likebot")
+print("Type help for a list of commands")
 while True:
   main()
