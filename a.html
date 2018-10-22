@@ -59,20 +59,26 @@
     </style>
     <script src="https://goessner.net/download/prj/jsonxml/xml2json.js"></script>
     <script>
-    function displayXib() {
-      var file = document.getElementById('input').files[0];
-      alert(file);
+    function displayXib(text) {
+      alert(text);
       }
+      function readFile(event) {
+        var input = event.target;
+
+        var reader = new FileReader();
+        reader.onload = function(){
+          var text = reader.result;
+          displayXib(text)
+        };
+        reader.readAsText(input.files[0]);
+ };
     </script>
   </head>
   <body>
     <h1>
       Enter Xib File
     </h1>
-    <input type="file" accept=".xib"/>
-    <button onclick="displayXib()">
-      Submit Thing
-    </button>
+    <input type="file" accept=".xib" onchange="readFile(event)"/>
     <hr/>
     <div id="phone">
       <div id="camera">
