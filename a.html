@@ -3,14 +3,14 @@
   <head>
     <title>Thing</title>
     <style>
-    #screen {
+    #phone {
       border: 2px solid black;
       border-radius: 10px;
       height: 5.45in;
       width: 2.65in;
       margin: auto;
       }
-      #lines {
+      #screen {
       border: 2px solid black;
       height:4.7in;
      margin-left:1em;
@@ -26,24 +26,49 @@
       left:1.1in;
       top:1px;
       }
-      #power {
-      position: absolute;
+      #camera {
       border: 1px solid black;
-      height:3em;
+      height: 1px;
+      width: 2em;
+      background-color:black;
+      border-radius:2em;
+      position:relative;
+      margin:auto;
+      top:10px;
+      }
+      #cameratop {
+      position:relative;
+      border-radius:3px;
+      height:3px;
       width:3px;
-      border-radius:0em 1em 1em 0em;
-      left:3.75in;
-      top:7em;
+      left:10px;
+      background:black;
+      border: 1px solid black;
+      bottom:10px;
+      }
+      #cameraleft {
+      position:relative;
+      border: 1px solid black;
+      height:0.5em;
+      width:0.5em;
+      border-radius:1em;
+      right:20px;
+      bottom:10px;
+      background:black
       }
     </style>
   </head>
   <body>
-    <div id="power">
-      &nbsp;
-    </div>
-    
-    <div id="screen">
-      <div id="lines">
+    <div id="phone">
+      <div id="camera">
+        <div id="cameratop">
+          &nbsp;
+        </div>
+        <div id="cameraleft">
+          &nbsp;
+        </div>
+      </div>
+      <div id="screen">
         &nbsp;
       </div>
       <div id="btn">
