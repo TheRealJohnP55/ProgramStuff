@@ -58,13 +58,19 @@
       }
     </style>
     <script src="https://goessner.net/download/prj/jsonxml/xml2json.js"></script>
+    <script>
+    function displayXib() {
+      var file = document.getElementById('input').files[0];
+      alert(file);
+      }
+    </script>
   </head>
   <body>
     <h1>
       Enter Xib File
     </h1>
     <input type="file" accept=".xib"/>
-    <button>
+    <button onclick="displayXib()">
       Submit Thing
     </button>
     <hr/>
