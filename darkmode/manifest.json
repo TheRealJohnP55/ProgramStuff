@@ -1,0 +1,12 @@
+{
+  "name": "Schoology Dark Mode",
+  "version": "1.0",
+  "description": "A dark mode for schoology",
+  "manifest_version": 2,
+   "content_scripts": [
+   {
+     "matches": ["https://killeenisd.schoology.com/*"],
+     "js": ["darkmode.js"]
+   }
+ ]
+}
