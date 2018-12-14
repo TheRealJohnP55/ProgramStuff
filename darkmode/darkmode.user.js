@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          schoology dark theme
-// @description	  A dark legit theme
-// @author        Camden
+// @description	  A dark theme for schoology
+// @author        person
 // @include       http*://killeenisd.schoology.com/*
 // ==/UserScript==
 (function() {var css = "";
